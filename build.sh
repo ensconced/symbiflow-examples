@@ -10,6 +10,6 @@ export PATH="$INSTALL_DIR/$FPGA_FAM/install/bin:$PATH";
 
 conda activate xc7
 cd xc7
-make -C counter_test
-make download -C counter_test
+make -C "$1"
+make download -C "$1"
 
